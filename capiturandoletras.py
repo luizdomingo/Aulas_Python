@@ -1,5 +1,6 @@
 # Capturando as primeiras letras Maiusculas de um Nome
-nome = 'Luiz Domnigo Da Silva'
+
+nome = str(input('Digite Um Nome: '))
 
 for letras in nome:
     letra_maiucula = letras[0]
