@@ -2,6 +2,8 @@ from tkinter import *
 from time import strftime
 
 app = Tk()
+app.title('Reelogio Do Maldini')
+
 relogio = Label(app, font='helvetica 120 bold', text= strftime('%H:%M:%S'))
 relogio.pack()
 
