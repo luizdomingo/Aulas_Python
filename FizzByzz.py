@@ -17,4 +17,5 @@ def FizzBuzz():
     except:
         print('Digite apenas numero..')
 
+
 print(FizzBuzz())

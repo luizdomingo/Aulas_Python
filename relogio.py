@@ -2,17 +2,29 @@ from tkinter import *
 from time import strftime
 
 app = Tk()
-app.title('Reelogio Do Maldini')
+app.geometry("200x70")
+app.title('Relógio Do Maldini')
+app.resizable(False, False)
+# relogio = Label(app, font='Helvetica 30 bold', text=strftime('%H:%M:%S'))
+# relogio.pack()
+btn = Button(app, font='Arial 30 bold', text=strftime('%H:%M:%S'))
+btn.pack()
 
-relogio = Label(app, font='helvetica 120 bold', text= strftime('%H:%M:%S'))
-relogio.pack()
 
-def tempo():
-    agora = strftime('%H:%M:%S')
-    if agora != relogio['text']:
-        relogio['text'] = agora
-    relogio.after(100, tempo)
+# def tempo():
+#     agora = strftime('%H:%M:%S')
+#     if agora != relogio['text']:
+#         relogio['text'] = agora
+#     relogio.after(100, tempo)
 
-tempo()
+
+def tempo1():
+    agora1 = strftime('%H:%M:%S')
+    if agora1 != btn['text']:
+        btn['text'] = agora1
+    btn.after(100, tempo1)
+
+
+# tempo()
+tempo1()
 app.mainloop()
-
